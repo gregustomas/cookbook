@@ -48,6 +48,7 @@
             try{
                 mysqli_query($conn, $sql);
                 echo "Registrace proběhla úspěšně";
+                mysqli_close($conn);
                 header("Location: login.php");
                 exit;
             }
