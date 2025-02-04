@@ -5,13 +5,13 @@
     $db_name = "cookbook";
     $conn = "";
 
-    try{
-        $conn = mysqli_connect($db_server,
-                               $db_user,
-                               $db_password,
-                               $db_name);
-    }
-    catch(mysqli_sql_exception){
-        echo "could't connect db.";
+
+    $conn = mysqli_connect($db_server,
+                            $db_user,
+                            $db_password,
+                            $db_name);
+
+    if (!$conn) {
+        die("Couldn't connect to the database: " . mysqli_connect_error());
     }
 ?>
