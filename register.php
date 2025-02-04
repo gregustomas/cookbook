@@ -48,6 +48,8 @@
             try{
                 mysqli_query($conn, $sql);
                 echo "Registrace proběhla úspěšně";
+                header("Location: login.php");
+                exit;
             }
             catch(mysqli_sql_exception){
                 echo "Toto jméno již někdo používá :(";
