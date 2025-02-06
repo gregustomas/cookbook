@@ -48,7 +48,7 @@
                             <button>Add reciep</button>
                         </li>
                         <li class="nav-item">
-                            <a href="index.php">Log out</a>
+                            <a href="logout.php">Log out</a>
                         </li>
                         <?php else: ?>
                         <li class="nav-item">
@@ -57,7 +57,7 @@
                         <li class="nav-item">
                             <a href="register.php">Register</a>
                         </li>
-                        <?php endif; session_destroy(); ?>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
